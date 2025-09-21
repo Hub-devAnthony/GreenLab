@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GreenLab!</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="styles/greenlab.css">
+  </head>
+  <body class="bg-green-50">
+    <main class="welcome-page">
+     <section class="flex items-center justify-center">
+      <div class="mt-20 flex flex-col items-center justify-evenly h-[500px] w-full lg:w-3/4">
+          <p class="text-green-900 font-black text-2xl lg:text-3xl">&#127757;GreenLab&#129514;</p>
+          <p class="text-green-800 font-extrabold text-xl lg:text-2xl text-center">Your trusted eco-friendly chemical checker. Balancing science, safety and sustainability for healthier families and a greener planet.</p>
+          <p class="italic underline text-blue-400 font-bold text-lg lg:text-xl text-center">"Protecting families&#127969;, preserving nature&#127793;."</p>
+          <button class="welcome-main-page-button p-2.5 rounded-xl bg-green-500 lg:hover:bg-green-700 text-white font-medium text-sm">Get Started</button>
+      </div>
+     </section>
+    </main>
+
+    <main class="main-page">
+      <button class="go-back-button fixed top-6 left-4"><img class="w-8 h-8" src="images/download (2).png"></button>
+      <section class="flex items-center justify-center">
+        <div class="mt-20 flex flex-col items-center justify-evenly h-[550px] w-full lg:w-3/4">
+          <p class="text-green-900 font-black text-2xl lg:text-3xl">&#127757;GreenLab&#129514;</p>
+
+           <div class="flex items-center gap-6 lg:gap-8">
+            <div class="flex flex-col">
+              <input type="text" placeholder="Enter chemical name..." class="search-input p-2.5 border-2 border-green-300 rounded-xl focus-outline-none text-green-900 font-medium text-sm">
+              <p class="message ml-2 mt-2 text-red-500 font-medium text-xs"></p>
+            </div>
+            <button class="search-button p-2.5 rounded-xl bg-green-500 lg:hover:bg-green-700 text-white font-medium text-sm">Search</button>
+           </div>
+
+           <div class="info-card hidden border-2 border-green-400 rounded-lg shadow-lg w-48 h-64 flex flex-col items-center justify-evenly bg-green-200">
+            <p class="underline text-red-500 font-medium text-xl lg:text-2xl">Bleach</p>
+            <p class="text-center text-green-800 font-medium text-lg lg:text-xl">Major Component: <span class="text-red-500 font-medium text-sm lg:text-lg">Sodium Hypochlorite</span></p>
+            <p class="text-red-500 font-medium text-lg lg:text-xl">Risk Level: <span class="px-1 py-1 bg-red-500 text-white font-medium text-xs lg:text-sm">High</span></p>
+            <button class="p-2 rounded-lg bg-green-500 lg:hover:bg-green-700 text-white font-medium text-sm">Learn More &#8599;</button>
+           </div>
+        </div>
+      </section>
+    </main>
+    <script src="data/chemicals.js"></script>
+    <script src="scripts/greenlab.js"></script>
+  </body>
+</html>
