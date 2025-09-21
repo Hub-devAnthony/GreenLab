@@ -6,6 +6,9 @@ const searchButton = document.querySelector('.search-button');
 const card = document.querySelector('.info-card');
 const input = document.querySelector('.search-input');
 const message = document.querySelector('.message');
+const chemicalName = document.querySelector('.chemical-name');
+const majorComponent = document.querySelector('.major-component');
+const riskLevel = document.querySelector('.risk-level');
 
 button.addEventListener('click', () => {
   welcomePage.classList.add('hidden');
@@ -25,6 +28,7 @@ goBackButton.addEventListener('click', () => {
   }, 300);
 });
 
+/*
 searchButton.addEventListener('click', function () {
   const query = input.value.trim();
   if (query === '') {
@@ -35,9 +39,32 @@ searchButton.addEventListener('click', function () {
     card.classList.remove('hidden');
   }
 });
+*/
 
 /*
 searchButton.addEventListener('click', () => {
   card.classList.remove('hidden');
 });
 */
+
+searchButton.addEventListener('click', () => {
+  const value = input.value.trim().toLowerCase();
+
+  if (!value) {
+    message.textContent = 'Kindly input a chemical name';
+    card.classList.add('hidden');
+    return;
+  }
+
+  const found = chemicals.find(chemical => chemical.name.toLowerCase() === value);
+  if (found) {
+    chemicalName.textContent = found.name;
+    majorComponent.textContent = found.component;
+    riskLevel.textContent = found.risk;
+    message.textContent = '';
+    card.classList.remove('hidden');
+  } else {
+    message.textContent = 'Chemical not found. Please try another name.';
+    card.classList.add('hidden');
+  }
+});
