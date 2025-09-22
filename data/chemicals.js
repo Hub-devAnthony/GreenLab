@@ -58,5 +58,41 @@ const chemicals = [
     component: "Citric acid",
     risk: "Green (33%)",
     precaution: "Safe in small quantities. May cause mild irritations."
-  }
+  },
+  {
+    name: "Ethanol",
+    component: "Ethanol",
+    risk: "Yellow (66%)",
+    precaution: "Flammable, avoid open flames. Use in well-ventilated area."
+  },
+  {
+    name: "Formaldehyde",
+    component: "Formaldehyde",
+    risk: "Red (100%)",
+    precaution: "Carcinogenic, avoid exposure."
+  },
+  {
+    name: "Sodium Hydroxide",
+    component: "Sodium hydroxide",
+    risk: "Red (100%)",
+    precaution: "Strongly caustic, wear protection."
+  },
+  {
+    name: "Hydrochloric Acid",
+    component: "Hydrogen chloride solution",
+    risk: "Red (100%)",
+    precaution: "Strong acid, handle carefully."
+  },
+  {
+    name: "Calcium Hydroxide",
+    component: "Calcium hydroxide",
+    risk: "Yellow (66%)",
+    precaution: "Corrosive, wear gloves."
+  },
+  {
+    name: "Citric Acid",
+    component: "Citric acid",
+    risk: "Green (33%)",
+    precaution: "Safe in small quantities. May cause mild irritations."
+  },
 ];
